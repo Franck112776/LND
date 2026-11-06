@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario de Registro al Torneo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulario de Registro al Torneo</h1>
+      <p>
+        Gracias por participar. Por favor, proporciona tu información para completar
+        el registro.
+      </p>
+    </header>
+    <main>
+      <form method="POST" action="https://hotel-feedback.freecodecamp.org">
+        <fieldset>
+          <legend>Información del Jugador</legend>
+          <label for="full-name">Nombre o Apodo (requerido):</label>
+          <input type="text" id="full-name" name="name" placeholder="ej., GamerPro99" required size="20">
+
+          <label for="email">Correo electrónico (requerido):</label>
+          <input
+            placeholder="ejemplo@correo.com"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"
+          />
+          <label for="age">Edad (opcional):</label>
+          <input type="number" name="age" id="age" min="3" max="100" />
+        </fieldset>
+
+        <fieldset>
+          <legend>¿Es la primera vez que participas en nuestros torneos?</legend>
+          <input id="yes-option" type="radio" name="hotel-stay" value="yes" />
+          <label for="yes-option">Sí</label>
+          <input id="no-option" type="radio" name="hotel-stay" value="no" />
+          <label for="no-option">No</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            ¿En qué categorías te gustaría participar? (Selecciona todas las que apliquen)
+          </legend>
+
+          <input type="checkbox" id="ads" name="choice" value="ads" />
+          <label for="ads">Disparos (FPS)</label>
+
+          <input
+            type="checkbox"
+            id="recommendation"
+            name="choice"
+            value="recommendation"
+          />
+          <label for="recommendation">Estrategia (MOBA)</label>
+          
+          <input type="checkbox" id="location" name="choice" value="location" />
+          <label for="location">Carreras</label>
+
+          <input
+            checked
+            type="checkbox"
+            id="reputation"
+            name="choice"
+            value="reputation"
+          />
+          <label for="reputation">Pelea</label>
+          
+          <input type="checkbox" id="price" name="choice" value="price" />
+          <label for="price">Deportes</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Valoraciones</legend>
+
+          <label for="service">¿Cómo calificas tu nivel de juego?</label>
+
+          <select name="service" id="service">
+            <option value="poor">Principiante</option>
+            <option value="satisfactory">Aficionado</option>
+            <option value="good">Intermedio</option>
+            <option value="very-good">Avanzado</option>
+            <option selected value="excellent">Profesional</option>
+          </select>
+
+          <label for="food">¿Cómo evalúas la conexión de tu red?</label>
+
+          <select name="food" id="food">
+            <option value="poor">Mala</option>
+            <option value="satisfactory">Aceptable</option>
+            <option value="good">Buena</option>
+            <option value="very-good">Muy Buena</option>
+            <option selected value="excellent">Excelente</option>
+          </select>
+        </fieldset>
+
+        <label for="comments">¿Otros comentarios?</label>
+        <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+      </form>
+    </main>
+  </body>
+</html>
