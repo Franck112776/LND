@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 6 - Formulario de soporte tecnico</title>
+</head>
+<body>
+
+    <h1>Registro de Incidencia - Soporte Tecnico</h1>
+    <p>Rellena el siguiente formulario para abrir un ticket de asistencia informatica.</p>
+
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Garcia" required>
+            <br><br>
+
+            <label for="email">Correo electronico corporativo:</label><br>
+            <input type="email" id="email" name="email" placeholder="ana.garcia@empresa.com" required>
+            <br><br>
+
+            <label for="equipo">Identificador del equipo (ID):</label><br>
+            <input type="text" id="equipo" name="equipo" placeholder="Ej. PC-AULA01-12">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Detalles de la incidencia</legend>
+
+            <label for="categoria">Categoria del problema:</label><br>
+            <select id="categoria" name="categoria" required>
+                <option value="">-- Selecciona una opcion --</option>
+                <option value="hardware">Hardware (Monitor, teclado, torre...)</option>
+                <option value="software">Software (Programas, sistema operativo...)</option>
+                <option value="red">Red e Internet (Sin conexion, Wi-Fi...)</option>
+                <option value="cuentas">Cuentas y contraseñas</option>
+            </select>
+            <br><br>
+
+            <span>Nivel de urgencia:</span><br>
+            <input type="radio" id="urgencia_baja" name="urgencia" value="baja" checked>
+            <label for="urgencia_baja">Baja</label><br>
+
+            <input type="radio" id="urgencia_media" name="urgencia" value="media">
+            <label for="urgencia_media">Media</label><br>
+
+            <input type="radio" id="urgencia_alta" name="urgencia" value="alta">
+            <label for="urgencia_alta">Alta (Impide trabajar)</label>
+            <br><br>
+
+            <label for="fecha">Fecha en la que comenzo el fallo:</label><br>
+            <input type="date" id="fecha" name="fecha" required>
+            <br><br>
+
+            <label for="descripcion">Descripcion detallada de la incidencia:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="5" cols="45" placeholder="Explica que estabas haciendo cuando ocurrio el error..." required></textarea>
+            <br><br>
+
+            <input type="checkbox" id="reinicio" name="reinicio" value="si">
+            <label for="reinicio">He probado a reiniciar el equipo antes de enviar este aviso.</label>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Enviar solicitud</button>
+        <button type="reset">Limpiar formulario</button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 7 - Página multimedia del departamento</title>
+</head>
+<body>
+    <header>
+        <h1>Departamento de informatica</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="recursos">Recursos</a></li>
+                <li><a href="ubicacion">Ubicacion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido al departamento</h2>
+            <p>Conoce nuestras instalaciones y los proyectos desarrollados por el alumnado</p>
+            <img src="imagen-departamento.jpg" alt="Alumnos trabajando en el laboratorio de informática" width="500">
+        </section>
+        
+        <section id="recursos">
+            <h2>Recursos multimedia</h2>
+            <article>
+                <h3>podcast del departamento</h3>
+                <p>Escucah nuestra ultima entrevista sobre ciberseguridad</p>
+                <audio controls>
+                    <source src="podcast-informatica.mp3" type="audio/mpeg">
+                    <source src="podcast-informatica.org" type="audio/ogg">
+                </audio>
+            </article>
+
+            <article>
+                <h3>Presentacion de proyectos</h3>
+                <p>Visualiza el resumen de los trabajos de fin del ciclo:</p>
+                <video controls width="480">
+                    <source src="proyectos.mp4" type="video/mp4">
+                    <source src="proyectos.webm" type="video/webm">
+                </video>
+            </article>
+        </section>
+
+        <section id="ubicacion">
+            <h2>¿Donde encontrarnos?</h2>
+            <p>El laboratorio de informática se encuentra en el edificio principal del centro educativo</p>
+            <iframe src="https://www.google.com/maps/embed?pb" width="100%" height="300" style="border:0" allowfullscreen="" loading="lazy" title="Ubicación del centro educativo"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>2026 Departamento de Informática - Centro Educativo. Todos los derechos reservados</p>
+    </footer>
+</body>
